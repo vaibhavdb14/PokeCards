@@ -1,0 +1,15 @@
+.header-content {
+  text-align: center;
+  padding: 40px 10px 20px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  color: var(--text-light);
+}
+
+.header-content p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--text-muted);
+}

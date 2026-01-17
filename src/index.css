@@ -1,0 +1,134 @@
+/* =========================
+   GLOBAL RESET
+   ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   ROOT THEME VARIABLES
+   ========================= */
+
+:root {
+  /* Backgrounds */
+  --bg-dark: #1e1e1e;
+  --bg-dark-soft: #2a2a2a;
+
+  --bg-yellow: #ffe680;
+  --bg-yellow-soft: #fff2b3;
+
+  /* Cards */
+  --card-bg: #ffffff;
+
+  /* Text */
+  --text-light: #f5f5f5;
+  --text-dark: #1f1f1f;
+  --text-muted: #6b6b6b;
+
+  /* Accent */
+  --accent-yellow: #f5c400;
+  --accent-dark: #1a1a1a;
+
+  font-family: "Segoe UI", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-dark-soft));
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background: var(--accent-yellow);
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   MAIN CONTENT WRAPPER
+   ========================= */
+
+.main-content {
+  background: linear-gradient(
+    180deg,
+    #ffeb99 0%,
+    #2a2a2a 35%,
+    #1e1e1e 100%
+  );
+  padding-bottom: 60px;
+}
+
+.load-more-btn {
+  background: linear-gradient(135deg, #ffe066, #f5c400);
+  color: #1f1f1f;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.load-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.load-more-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

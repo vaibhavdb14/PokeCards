@@ -1,0 +1,142 @@
+/* =========================
+   FOOTER BASE
+   ========================= */
+
+.footer {
+  margin-top: 120px;
+  padding: 70px 20px 35px;
+  background: linear-gradient(
+    180deg,
+    #1b1b1b 0%,
+    #0f0f0f 100%
+  );
+  color: #cfcfcf;
+  position: relative;
+}
+
+/* subtle top glow separator */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 224, 102, 0.6),
+    transparent
+  );
+}
+
+/* =========================
+   FOOTER CONTENT
+   ========================= */
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   TITLE & TAGLINE
+   ========================= */
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffe066;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  color: #b5b5b5;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   NAV LINKS
+   ========================= */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 35px;
+}
+
+.footer-links span {
+  position: relative;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  letter-spacing: 0.5px;
+  transition: color 0.25s ease;
+}
+
+.footer-links span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #ffe066;
+  transition: all 0.25s ease;
+  transform: translateX(-50%);
+}
+
+.footer-links span:hover {
+  color: #ffe066;
+}
+
+.footer-links span:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   CREDITS
+   ========================= */
+
+.footer-credits {
+  max-width: 720px;
+  margin: 0 auto 25px;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: #9e9e9e;
+}
+
+.footer-credits p {
+  margin-bottom: 8px;
+}
+
+.footer-credits a {
+  color: #ffe066;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-credits a:hover {
+  text-decoration: underline;
+}
+
+/* softer AI credit */
+.ai-credit {
+  opacity: 0.75;
+}
+
+/* =========================
+   COPYRIGHT
+   ========================= */
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 0.7rem;
+  color: #7d7d7d;
+}
