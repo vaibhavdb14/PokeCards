@@ -93,5 +93,3 @@ This is an unofficial, non-commercial fan project created for educational and de
 ## ⭐ Support
 
 If you like this project, consider giving it a ⭐ on GitHub!
-
-```
