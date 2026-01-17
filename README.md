@@ -69,9 +69,7 @@ Open `http://localhost:5173` in your browser.
 
 ## 🌐 Live Demo
 
-👉 **Live Site:** *Coming soon*
-
-(Will be updated after deployment)
+👉 **Live Site:** https://pokecards-pokedex.vercel.app/
 
 ---
 
